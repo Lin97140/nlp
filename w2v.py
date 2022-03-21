@@ -11,4 +11,4 @@ print(f.most_common(100))
 
 corpus = PathLineSentences(source)
 model = Word2Vec(sentences=corpus, vector_size=100, window=5, min_count=1, workers=4)
-#print(model.wv.most_similar(positive=['漲',"賺"], negative=['跌']))
+print(model.wv.most_similar(positive=['漲',"賺"], negative=['跌']))
